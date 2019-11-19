@@ -102,3 +102,6 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+/human_detection/src/resources/roma_images
+/human_detection/src/resources/roma_labels
+/human_detection/src/tfrecord
