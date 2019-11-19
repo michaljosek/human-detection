@@ -6,5 +6,5 @@ def read_json(filename):
     with open(filename) as f:
         data = json.load(f)
 
-    pprint(data)
+    # pprint(data)
     return data

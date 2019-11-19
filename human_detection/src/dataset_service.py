@@ -3,6 +3,8 @@ from src.json_reader import *
 from src.configuration import *
 import cv2
 import numpy as np
+import sys
+import glob
 
 
 def get_width_scaled(width):
@@ -55,27 +57,38 @@ def get_tf_example(filename):
 
 
 def get_resized_image(filename, size=(SCALED_IMAGE_HEIGHT, SCALED_IMAGE_WIDTH)):
-    img = cv2.imread(get_png_file(filename))
-    img = cv2.resize(img, size, interpolation=cv2.INTER_CUBIC)
+    png_filename = get_png_file(filename)
+    img = cv2.imread(png_filename)
+    img = cv2.resize(img, size)
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     img = img.astype(np.float32)
     return img
 
 
 def get_tf_record(filenames, filename_output):
-    with tf.io.TFRecordWriter(filename_output) as writer:
-        for filename in filenames:
+    array_length = len(filenames)
+    with tf.io.TFRecordWriter(src_folder_path + r'\\' + filename_output) as writer:
+        for i, filename in enumerate(filenames):
             tf_example = get_tf_example(filename)
             serialized = tf_example.SerializeToString()
 
             writer.write(serialized)
+            print("{} out of {}".format(i, array_length))
+
+        writer.close()
+        sys.stdout.flush()
 
 
 def get_json_file(filename):
-    return filename + '.json'
+    return labels_folder_path + filename + '.json'
 
 
 def get_png_file(filename):
-    return filename + '.png'
+    return images_folder_path + filename + '.png'
 
 
+def get_filenames_to_create_tf_record():
+    print(os.path.dirname(os.path.abspath(__file__)))
+    os.chdir("./resources/roma_labels/")
+    array = [x[0:10] for x in glob.glob("*")]
+    return array
