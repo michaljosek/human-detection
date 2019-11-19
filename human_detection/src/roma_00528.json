@@ -1,0 +1,246 @@
+{
+ "tags": [], 
+ "imageheight": 1024, 
+ "imagewidth": 1920, 
+ "children": [
+  {
+   "tags": [], 
+   "x0": 1222, 
+   "y1": 591, 
+   "y0": 535, 
+   "x1": 1282, 
+   "children": [], 
+   "identity": "scooter-group"
+  }, 
+  {
+   "tags": [], 
+   "x0": 873, 
+   "y1": 640, 
+   "y0": 523, 
+   "x1": 937, 
+   "children": [
+    {
+     "tags": [], 
+     "x0": 872, 
+     "children": [], 
+     "y1": 668, 
+     "y0": 555, 
+     "x1": 941, 
+     "Orient": 179.18, 
+     "identity": "motorbike"
+    }
+   ], 
+   "identity": "rider"
+  }, 
+  {
+   "tags": [], 
+   "x0": 795, 
+   "y1": 666, 
+   "y0": 511, 
+   "x1": 867, 
+   "children": [
+    {
+     "tags": [], 
+     "x0": 786, 
+     "children": [], 
+     "y1": 698, 
+     "y0": 526, 
+     "x1": 870, 
+     "Orient": 187.95, 
+     "identity": "scooter"
+    }
+   ], 
+   "identity": "rider"
+  }, 
+  {
+   "tags": [], 
+   "x0": 668, 
+   "children": [], 
+   "y1": 858, 
+   "y0": 459, 
+   "x1": 786, 
+   "Orient": 123.53999999999999, 
+   "identity": "pedestrian"
+  }, 
+  {
+   "tags": [], 
+   "x0": 1016, 
+   "children": [], 
+   "y1": 848, 
+   "y0": 477, 
+   "x1": 1110, 
+   "Orient": 110.0, 
+   "identity": "pedestrian"
+  }, 
+  {
+   "tags": [
+    "depiction"
+   ], 
+   "x0": 1778, 
+   "y1": 594, 
+   "y0": 479, 
+   "x1": 1819, 
+   "children": [], 
+   "identity": "person-group-far-away"
+  }, 
+  {
+   "tags": [], 
+   "x0": 1140, 
+   "children": [], 
+   "y1": 605, 
+   "y0": 537, 
+   "x1": 1164, 
+   "Orient": 6.0, 
+   "identity": "pedestrian"
+  }, 
+  {
+   "tags": [], 
+   "x0": 1185, 
+   "y1": 626, 
+   "y0": 530, 
+   "x1": 1219, 
+   "children": [], 
+   "identity": "person-group-far-away"
+  }, 
+  {
+   "tags": [], 
+   "x0": 1189, 
+   "children": [], 
+   "y1": 628, 
+   "y0": 527, 
+   "x1": 1220, 
+   "Orient": 312.0, 
+   "identity": "pedestrian"
+  }, 
+  {
+   "tags": [], 
+   "x0": 1250, 
+   "y1": 615, 
+   "y0": 526, 
+   "x1": 1274, 
+   "children": [], 
+   "identity": "person-group-far-away"
+  }, 
+  {
+   "tags": [
+    "occluded>40"
+   ], 
+   "x0": 1257, 
+   "children": [], 
+   "y1": 636, 
+   "y0": 513, 
+   "x1": 1294, 
+   "Orient": 348.0, 
+   "identity": "pedestrian"
+  }, 
+  {
+   "tags": [], 
+   "x0": 1346, 
+   "y1": 662, 
+   "y0": 493, 
+   "x1": 1424, 
+   "children": [], 
+   "identity": "person-group-far-away"
+  }, 
+  {
+   "tags": [], 
+   "x0": 1301, 
+   "y1": 645, 
+   "y0": 511, 
+   "x1": 1344, 
+   "children": [], 
+   "identity": "person-group-far-away"
+  }, 
+  {
+   "tags": [], 
+   "x0": 1208, 
+   "children": [], 
+   "y1": 897, 
+   "y0": 471, 
+   "x1": 1421, 
+   "Orient": 91.4, 
+   "identity": "pedestrian"
+  }, 
+  {
+   "tags": [
+    "occluded>10"
+   ], 
+   "x0": 1307, 
+   "children": [], 
+   "y1": 871, 
+   "y0": 464, 
+   "x1": 1524, 
+   "Orient": 105.0, 
+   "identity": "pedestrian"
+  }, 
+  {
+   "tags": [], 
+   "x0": 1438, 
+   "children": [], 
+   "y1": 920, 
+   "y0": 407, 
+   "x1": 1586, 
+   "Orient": 106.0, 
+   "identity": "pedestrian"
+  }, 
+  {
+   "tags": [
+    "occluded>40"
+   ], 
+   "x0": 1619, 
+   "children": [], 
+   "y1": 808, 
+   "y0": 457, 
+   "x1": 1757, 
+   "Orient": 23.0, 
+   "identity": "pedestrian"
+  }, 
+  {
+   "tags": [
+    "occluded>10"
+   ], 
+   "x0": 1558, 
+   "children": [], 
+   "y1": 867, 
+   "y0": 447, 
+   "x1": 1750, 
+   "Orient": 59.0, 
+   "identity": "pedestrian"
+  }, 
+  {
+   "tags": [], 
+   "x0": 1541, 
+   "children": [], 
+   "y1": 883, 
+   "y0": 475, 
+   "x1": 1692, 
+   "Orient": 109.0, 
+   "identity": "pedestrian"
+  }, 
+  {
+   "tags": [
+    "occluded>10", 
+    "truncated>10"
+   ], 
+   "x0": 1637, 
+   "children": [], 
+   "y1": 959, 
+   "y0": 413, 
+   "x1": 1920, 
+   "Orient": 86.78, 
+   "identity": "pedestrian"
+  }, 
+  {
+   "tags": [
+    "depiction"
+   ], 
+   "x0": 1811, 
+   "y1": 628, 
+   "y0": 548, 
+   "x1": 1920, 
+   "children": [], 
+   "identity": "scooter-group"
+  }
+ ], 
+ "identity": "frame"
+}

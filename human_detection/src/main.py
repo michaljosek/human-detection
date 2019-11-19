@@ -1,3 +1,4 @@
-import tensorflow as tf
+from src.dataset_service import *
 
-print(tf.__version__)
+test = get_tf_example('roma_00528')
+test1 = 2
