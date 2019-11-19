@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f31d8013-7fe7-4346-a6d5-13c63961c5c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/configuration.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dataset_service.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dataset_util.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/json_reader.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataset_service.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -77,9 +73,6 @@
       <module name="human_detection" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="C:\Users\michal.josek\PycharmProjects\human_detection\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -113,7 +106,7 @@
       <updated>1573689043323</updated>
       <workItem from="1573689044452" duration="196000" />
       <workItem from="1573751753862" duration="599000" />
-      <workItem from="1574171500344" duration="389000" />
+      <workItem from="1574171500344" duration="5441000" />
     </task>
     <servers />
   </component>
@@ -132,6 +125,6 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/human_detection$main.coverage" NAME="main Coverage Results" MODIFIED="1574172080605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/human_detection$main.coverage" NAME="main Coverage Results" MODIFIED="1574196115512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
 </project>

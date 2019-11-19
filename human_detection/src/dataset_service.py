@@ -1,7 +1,8 @@
 from src.dataset_util import *
 from src.json_reader import *
 from src.configuration import *
-import os
+import cv2
+import numpy as np
 
 
 def get_width_scaled(width):
@@ -13,9 +14,8 @@ def get_height_scaled(height):
 
 
 def get_tf_example(filename):
-    file_path = os.path.join(filename + '.png')
-    with tf.io.gfile.GFile(file_path, 'rb') as file:
-        encoded_png = file.read()
+    resized_image = get_resized_image(filename)
+    encoded_png = resized_image.tostring()
 
     encoded_filename = filename.encode('utf8')
     image_format = b'png'
@@ -26,7 +26,7 @@ def get_tf_example(filename):
     classes_text = []
     classes = []
 
-    json_filename = filename + '.json'
+    json_filename = get_json_file(filename)
     labels_json = read_json(json_filename)
 
     for label in labels_json["children"]:
@@ -52,3 +52,30 @@ def get_tf_example(filename):
         'image/object/class/label': int64_list_feature(classes),
     }))
     return tf_example
+
+
+def get_resized_image(filename, size=(SCALED_IMAGE_HEIGHT, SCALED_IMAGE_WIDTH)):
+    img = cv2.imread(get_png_file(filename))
+    img = cv2.resize(img, size, interpolation=cv2.INTER_CUBIC)
+    img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+    img = img.astype(np.float32)
+    return img
+
+
+def get_tf_record(filenames, filename_output):
+    with tf.io.TFRecordWriter(filename_output) as writer:
+        for filename in filenames:
+            tf_example = get_tf_example(filename)
+            serialized = tf_example.SerializeToString()
+
+            writer.write(serialized)
+
+
+def get_json_file(filename):
+    return filename + '.json'
+
+
+def get_png_file(filename):
+    return filename + '.png'
+
+
